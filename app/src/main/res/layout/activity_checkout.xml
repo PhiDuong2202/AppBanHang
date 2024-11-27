@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tiêu đề Thanh toán -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin thanh toán"
+            android:minHeight="48dp"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Thông tin khách hàng -->
+        <EditText
+            android:id="@+id/customerNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên"
+            android:minHeight="48dp"
+            android:autofillHints="name"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/customerGenderEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới tính"
+            android:minHeight="48dp"
+            android:autofillHints="gender"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/customerAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:autofillHints="address"/>
+
+        <EditText
+            android:id="@+id/customerPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:minHeight="48dp"
+            android:inputType="phone"
+            android:autofillHints="phone"/>
+
+        <TextView
+            android:id="@+id/paymentMethodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phương thức thanh toán"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/paymentMethodRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_bank_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển khoản ngân hàng" />
+
+            <RadioButton
+                android:id="@+id/radio_e_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví điện tử" />
+
+            <RadioButton
+                android:id="@+id/radio_cash_on_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền mặt khi nhận hàng" />
+        </RadioGroup>
+
+        <!-- Tổng giá trị giỏ hàng -->
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng: 0 VNĐ"
+            android:textSize="18sp"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Nút thanh toán -->
+        <Button
+            android:id="@+id/confirmCheckoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận thanh toán" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppBTL</string>
+
+    <string-array name="roles_array">
+        <item>Admin</item>
+        <item>User</item>
+    </string-array>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779804049704",
+    "project_id": "appbtl-8fd86",
+    "storage_bucket": "appbtl-8fd86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779804049704:android:ed463db1cb0ef27d3d101d",
+        "android_client_info": {
+          "package_name": "com.example.appbtl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALFdnOjSrlCZEDClkHQDTx_Dk3xyPudWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
